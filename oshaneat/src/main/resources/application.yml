@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/osahaneat
+    username: root
+    password: abc123
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: giahuy957z@gmail.com
+    password: fnarqxcdkqvrcxgz
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls:
+            enable: true
+jwt:
+  privateKey: STVgJV6vO3P7s4Efpj0VE6MNAK/JZqU1ZOL4YGBskug=
+
+stripe:
+  api:
+    secretKey: sk_test_51OJy1oFFtiwvOqhy7IQNjIFdqbT0UFFncvcvdMOf7ty5hB2jZCWWtNSLuGT8HKYXuKt1l92lpaOVifecTqESi30400d4aVg2jY
+
+fileUpload:
+  rootPath: ${user.dir}\src\main\resources\uploads
+
